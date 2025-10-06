@@ -18,10 +18,9 @@ func palindrome(s string) bool {
 }
 func main() {
 	s := "malayalam"
-	res := palindrome(s)
-	if res == true {
-		fmt.Printf("%s is a Palindrome\n", s)
+	if palindrome(s) == true {
+		fmt.Println(s, "is a Palindrome")
 	} else {
-		fmt.Printf("%s is not a Palindrome\n", s)
+		fmt.Println(s, "is not a Palindrome")
 	}
 }
