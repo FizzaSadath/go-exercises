@@ -18,14 +18,15 @@ func main() {
 	fmt.Println(sf)
 }
 func abbreviate(s1 string) string {
-	var letters []string
+	var letters string = ""
 	words := strings.Fields(s1)
 	for _, word := range words {
 		if word[0] >= 'A' && word[0] <= 'Z' {
-			letters = append(letters, string(word[0]))
+			//letters = append(letters, string(word[0]))
+			letters += string(word[0])
 		}
 
 	}
-	shortform := strings.Join(letters, "")
-	return shortform
+	//shortform := strings.Join(letters, "")
+	return letters
 }
